@@ -1,14 +1,45 @@
+html {
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/175/117/296/minions-despicable-me-wallpaper-preview.jpg);
+}
+/*division */
 div {
-    height: 400px;
+    height:500px;
     width:500px;
-    border: solid 5px goldenrod;
+    border: solid 10px green;
     position: relative;
     background-color:aquamarine;
+    animation: myanim 1s infinite; 
  }
+ @keyframes myanim {
+    25% {
+       border-color: black;
+ }
+50%
+{
+    border-color:coral;
+}
+75%{
+    border-color:darkgreen;
+}
+100%{
+    border-color:maroon;
+}}
+#h1_2{
+    border: 1px solid black;
+    border-radius: 4em;
+    animation: move2 2s infinite;
+    width:fit-content;
+    padding: 25px;
+
+}
  #div1{
     height: 400px;
-    width:1014px;
-    border: solid 5px goldenrod;
+    width:1021px;
+    border: solid 10px goldenrod;
     position: relative;
     background-color:aquamarine;
  }
@@ -19,17 +50,9 @@ div {
     border: solid 5px goldenrod;
     position: relative;
     background-color:antiquewhite;
+    margin-left: 130px;
  }
- .picture{
-    margin: 75px;
-    height: 75px;
-    width: 75px;
-    border: solid 5px goldenrod;
-    position: relative;
-    background-color:antiquewhite;
-
- }
- h1 {
+#h_1{
      background-color: tomato;
      display: inline-block;
      margin: 0;
@@ -45,27 +68,34 @@ div {
     75% { left: 100%; top: 0%; transform: translate(-100%, -0%);}
     100% { left: 0px; top: 0%; transform: translate(-0%, 0%);}
     from{background-color: red;color: black;}
-    to {background-color: blue;color: bisque;}
-    
+    to {background-color: blue;color: bisque;}  
  }
 
  h2{
      text-align: center;
-     padding: 150px;
-     animation: move1 5s infinite ;
-    
-     
+     margin-top: 200px;
+     margin-left: 150px;
+     padding: 20px;
+     border: 1px solid black;
+     width: fit-content;
+    animation: change 3s alternate infinite;
+       
  }
- @keyframes move1 {
-     from{color:red}
-     to{color: blue;}
-     
-     
+ @keyframes move1{
+    from{color:goldenrod}
+    to{color:blueviolet}
+ }
+ @keyframes move2 {
+     from{color:white}
+     to{color:cyan;}
+     from{background-color:red;}
+     to{background-color:blue;}
+        
  }
  /*rotating blocks*/
  div.box1 {
-    width: 100px; 
-    height: 100px; 
+    width: 120px; 
+    height: 120px; 
     background-color: coral; 
     margin: 50px;
     display: inline-block; 
@@ -75,8 +105,8 @@ div {
     color: white;
 }
 div.box2 {
-    width: 100px; 
-    height: 100px; 
+    width: 120px; 
+    height: 120px; 
     background-color: coral; 
     margin: 50px;
     display: inline-block; 
@@ -86,8 +116,8 @@ div.box2 {
     color: white;
 }
 div.box3 {
-    width: 100px; 
-    height: 100px; 
+    width: 120px; 
+    height: 120px; 
     background-color: coral; 
     margin: 50px;
     display: inline-block; 
@@ -113,4 +143,57 @@ div.box3 {
 @keyframes roller3 {
     0% {transform: rotate(0deg); background-color: rgb(119, 0, 255);}
     100% {transform: rotate(360deg); background-color: rgb(255, 115, 0)}
+}
+#box {
+    width: 300px; height: 400px;
+    color: aqua; border: 3px solid black;
+
+    margin: 20px;
+    float: left;
+    padding: 10px;
+
+}
+#square{
+    width: 100px; height: 100px;
+    border: 2px solid black;
+    background-image: url(https://dx35vtwkllhj9.cloudfront.net/universalstudios/minions-the-rise-of-gru/images/bg.jpg
+    );
+    margin: 20px;
+    padding: 10px;
+    float:left;
+    animation: move4 4s alternate infinite;
+}
+#circle{
+    width: 100px; height: 100px;
+    border-radius: 10em;
+    border: 2px solid black;
+    margin: 20px;
+    margin-top: 100px;
+    padding: 10px;
+    float:right;
+    animation: move3 4s alternate infinite; 
+}
+@keyframes change {
+    0%{background-color: orangered;border-radius:0;}
+    25%{background-color: yellowgreen;border-radius: 50% 0 0 0;}
+    50%{background-color: yellow;border-radius:50% 50% 0 0;}
+    75%{background-color: blueviolet;border-radius:50% 50% 50% 0;}
+   100%{background-color: orange;border-radius:50% 50% 50% 50%;}
+
+}
+@keyframes move3 {
+    0%{
+        bottom:0px;
+    }
+    100%{
+        bottom: 250px;
+    }
+}
+@keyframes move4 {
+    0%{
+        top:0px;
+    }
+    100%{
+        top: 250px;
+    }
 }
