@@ -2,7 +2,7 @@ html {
     min-height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-image: url(https://c4.wallpaperflare.com/wallpaper/175/117/296/minions-despicable-me-wallpaper-preview.jpg);
 }
 /*division */
@@ -27,7 +27,8 @@ div {
 }
 100%{
     border-color:maroon;
-}}
+}
+}
 #h1_2{
     border: 1px solid black;
     border-radius: 4em;
