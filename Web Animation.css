@@ -162,7 +162,7 @@ div.box3 {
     margin: 20px;
     padding: 10px;
     float:left;
-    animation: move4 4s alternate infinite;
+    animation: move4 2s alternate infinite;
 }
 #circle{
     width: 100px; height: 100px;
@@ -172,7 +172,7 @@ div.box3 {
     margin-top: 100px;
     padding: 10px;
     float:right;
-    animation: move3 4s alternate infinite; 
+    animation: move3 2s alternate infinite; 
 }
 @keyframes change {
     0%{background-color: orangered;border-radius:0;}
