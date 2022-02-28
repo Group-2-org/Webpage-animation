@@ -127,15 +127,15 @@ div.box3 {
     line-height: 50px; 
     color: white;
 }
-.box1 {animation: roller1 5s infinite ;}
+.box1 {animation: roller1 8s infinite ;}
 
-.box2 {animation: roller2 5s infinite ;}
+.box2 {animation: roller2 8s infinite ;}
 
-.box3 {animation: roller3 5s infinite ;}
+.box3 {animation: roller3 8s infinite ;}
 
 @keyframes roller1 {
     0% {transform: rotate(0deg); background-color: blue;}
-    100% {transform: rotate(360deg); background-color: rgb(0, 255, 21)}
+    100% {transform: rotate(360deg); background-color: rgb(255, 115, 0)}
 }
 @keyframes roller2 {
     0% {transform: rotate(0deg); background-color: blue;}
@@ -143,7 +143,7 @@ div.box3 {
 }
 @keyframes roller3 {
     0% {transform: rotate(0deg); background-color: rgb(119, 0, 255);}
-    100% {transform: rotate(360deg); background-color: rgb(255, 115, 0)}
+    100% {transform: rotate(360deg); background-color: rgba(0, 255, 98, 0.87)}
 }
 #box {
     width: 300px; height: 400px;
